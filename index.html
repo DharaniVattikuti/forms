@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms_UI</title>
+    <style>
+        .div{
+            border: 2px  solid rgb(185, 176, 176);
+            border-radius: 30px;
+            background-color: yellowgreen;
+            width: 350px;
+            margin-left: 100px;
+            height: 400px;
+        }
+        .reg{
+            margin-left: 145px;
+        }
+        input[id="user_name"]{
+            background-color: burlywood;
+            margin-left: 65px;
+        }
+        input[id="email"]{
+            background-color: burlywood;
+            margin-left: 85px;
+        }
+        input[name="password"]{
+            background-color: burlywood;
+            margin-left: 70px;
+        }
+        input[type="radio"]{
+            background-color: burlywood;
+            margin-left: 65px;
+        }
+        input[id="m_num"]{
+            background-color: burlywood;
+            margin-left: 30px;
+        }
+        input[type^="sub"]{
+            background-color: burlywood;
+            margin-left: 30px;
+        }
+        textarea[id="addr"]{
+            background-color: burlywood;
+            margin-left: 70px;
+        }
+        label[for]{
+            margin-left: 03px;
+        }
+        input[type="submit"]{
+            margin-left: 145px;
+            font-size: 20px;
+        }
+        input[type="month"]{
+            background-color: burlywood;
+            margin-left: 50px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1 class="reg">Registration Form </h1>
+    <div class="div"><br>
+        <form action="">
+            <label for="user_name">Username:</label>
+            <input type="text" id="user_name" name="user_name"><hr>
+            <label for="email">Mail id:</label>
+            <input type="text" id="email" name="mail"><hr>
+            <label for="m_num">Mobile Number:</label>
+            <input type="text" id="m_num" name="number"><hr>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required name="password"><hr>
+            <label >Gender:</label> <input type="radio" id="gender_1" name="gender" value="Male"><label for="gender_1">Male</label>
+            <input type="radio" id="gender_2" name="gender" value="Fe-Male"><label for="gender_2">Fe-Male</label><br><hr>
+            <label for="dob"> Date of Birth:</label><input type="month" id="dob" name="date"><hr>
+            <!-- <input type="text" id="address" name="addr" placeholder=""> -->
+            <label for="addr">Address:</label>
+            <textarea name="addr" id="addr" value="ur address goes here"></textarea>
+            <hr>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
